@@ -208,35 +208,45 @@
             </div>
 
         </section>
-        <div class="borrowCalc ">
+        <div class="borrowCalc">
             <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Cумма:
-                <p class="borrowCalc-val sum"><span class="val-number">15 000</span> Руб.</p>
-                <input class="calc-range" type="range"
-                       min="1000"
-                       max="100000"
-                       step="500"
-                       value="3000"
-                       data-orientation="horizontal"
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Cумма:
+                    <p class="borrowCalc-val sum"><span class="val-number">15 000</span> Руб.</p>
+                    <input class="calc-range" type="range"
+                           min="1000"
+                           max="100000"
+                           step="500"
+                           value="3000"
+                           data-orientation="horizontal"
 
-                >
-            </div>
-            <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Срок:</p>
-                <p class="borrowCalc-val day"><span class="val-number">37</span> Дней</p>
-                <input class="calc-range" type="range"
-                       min="10"
-                       max="100"
-                       step="1"
-                       value="10"
-                       data-orientation="horizontal"
+                    >
+                </div>
 
-                >
             </div>
-            <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Итого к оплате до <span>27.07.17</span></p>
-                <p class="borrowCalc-val total">20 550 Руб.</p>
-                <p class="borrowCalc-title not-margin">Переплата: 5550 рублей</p>
+            <div class="borrowCalc-col bord">
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Срок:</p>
+                    <p class="borrowCalc-val day"><span class="val-number">37</span> Дней</p>
+
+                    <input class="calc-range" type="range"
+                           min="10"
+                           max="100"
+                           step="1"
+                           value="10"
+                           data-orientation="horizontal"
+
+                    >
+                </div>
+
+            </div>
+            <div class="borrowCalc-col total-col">
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Итого к оплате до <span>27.07.17</span></p>
+                    <p class="borrowCalc-val total">20 550 Руб.</p>
+                    <p class="borrowCalc-title not-margin">Переплата: 5550 рублей</p>
+                </div>
+
 
             </div>
             <div class="borrowCalc-col">
@@ -314,9 +324,12 @@
                     </div>
                 </div>
                 <div class="footerMid-right">
-                    <img src="image/sber.png" alt="" class="partnerImage">
-                    <img src="image/balt.png" alt="" class="partnerImage">
-                    <img src="image/elex.png" alt="" class="partnerImage">
+                    <div class="partnerImage-wrap">
+                        <img src="image/sber.png" alt="" class="partnerImage">
+                        <img src="image/balt.png" alt="" class="partnerImage">
+                        <img src="image/elex.png" alt="" class="partnerImage">
+                    </div>
+
                 </div>
             </div>
             <div class="footerBottom">
@@ -335,8 +348,26 @@
                     <a href="" class="documentDownload orangeLink">Положение о защите персональных данных</a>
                     <a href="" class="documentDownload orangeLink">Раскрытие информации неограниченному кругу лиц</a>
                 </div>
+
+            </div>
+            <div class="footerBottom-comp">
+                <!--<div class="footerBottom-logo">-->
+                   <!---->
+                <!--</div>-->
+                <p class="footerBottom-text" ><img src="image/gerb.png" alt="">© ООО Микрофинансовая организация «Агентство малого кредитования».</p>
+                <p class="footerBottom-text">
+
+
+                    Агентство внесено в Государственный реестр микрофинансовых организаций: <a class="orangeLink" href="">Регистрационный номер записи 2 11 05 18 000809,</a> дата внесения сведений в государствееный реестр: 17.11.2011.
+                </p>
+            </div>
+            <div class="partnerImage-wrap mob">
+                <img src="image/sber.png" alt="" class="partnerImage">
+                <img src="image/balt.png" alt="" class="partnerImage">
+                <img src="image/elex.png" alt="" class="partnerImage">
             </div>
         </div>
+
     </footer>
 
 </body>
