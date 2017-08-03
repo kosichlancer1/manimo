@@ -8,12 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.1/rangeslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.css">
     <link rel="stylesheet" href="css/main.css">
+
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.8/jquery.formstyler.min.js"></script>
+
 
 
 
@@ -22,7 +26,7 @@
     <header>
         <div class="container">
             <div class="headerTop">
-                <div class="topHamburger desktop-n mobile-v">2</div>
+                <div class="topHamburger desktop-n mobile-v"><img src="image/orange-hamburger.png" alt=""></div>
                 <nav class="mobile-n">
                     <a href="" class="headerTop-link">Манимо</a>
                     <a href="" class="headerTop-link">О компании</a>
@@ -32,6 +36,9 @@
                     <a href="" class="headerTop-link">Вопрос-ответ</a>
                 </nav>
             </div>
+        </div>
+            <div class="sticky-wrap">
+                <div class="container">
             <div class="headerMid">
                 <a href="" class="headerLogo">
                     <img src="image/manymo-logo.png" alt="">
@@ -42,7 +49,17 @@
                         <div class="desc">Бесплатная горячая линия</div>
                     </div>
                     <div class="headerMid-cityPick">
-                        <a href="">Нижневартовск</a>
+
+
+                            <select onchange="changesotr()" id="changeemp" class="city form-control">
+                                <option value="1">Ижевск</option>
+                                <option value="2">Нижневартовск</option>
+                                <option value="3">Воткинск</option>
+                                <option value="4">Сарапул</option>
+                                <option value="6">Ува</option>
+                                <option value="5">Глазов</option>
+                            </select>
+
                     </div>
                     <div class="headerMid-address">
                         <span>ул. Нефтяников, д.64</span>
@@ -50,21 +67,25 @@
                     </div>
                 </div>
             </div>
+                </div>
             <div class="headerBottom clearfix">
+                <div class="container">
                 <div class="bottomHamburger desktop-n mobile-v"><img src="image/white-hamburger.png" alt=""><span>Меню</span></div>
                 <nav>
-                    <a href="" class="headerBottom-link">О компании</a>
-                    <a href="" class="headerBottom-link">Экспресс займы</a>
-                    <a href="" class="headerBottom-link">Займы под залог</a>
-                    <a href="" class="headerBottom-link">Спецпредложения</a>
-                    <a href="" class="headerBottom-link">Как оплатить?</a>
-                    <a href="" class="headerBottom-link">Контакты</a>
+                    <li><a href="" class="headerBottom-link">О компании</a></li>
+                    <li><a href="" class="headerBottom-link">Экспресс займы</a></li>
+                    <li><a href="" class="headerBottom-link">Займы под залог</a></li>
+                    <li><a href="" class="headerBottom-link">Спецпредложения</a></li>
+                    <li><a href="" class="headerBottom-link">Как оплатить?</a></li>
+                    <li><a href="" class="headerBottom-link">Контакты</a></li>
                 </nav>
 
                 <div class="headerBottom-button">
                     <a href="">Оформить займ</a>
                 </div>
+                </div>
             </div>
+
         </div>
     </header>
     <div class="mainBanner">
@@ -209,35 +230,45 @@
             </div>
 
         </section>
-        <div class="borrowCalc ">
+        <div class="borrowCalc">
             <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Cумма:
-                <p class="borrowCalc-val sum"><span class="val-number">15 000</span> Руб.</p>
-                <input class="calc-range" type="range"
-                       min="1000"
-                       max="100000"
-                       step="500"
-                       value="3000"
-                       data-orientation="horizontal"
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Cумма:
+                    <p class="borrowCalc-val sum"><span class="val-number">15 000</span> Руб.</p>
+                    <input class="calc-range" type="range"
+                           min="1000"
+                           max="100000"
+                           step="500"
+                           value="3000"
+                           data-orientation="horizontal"
 
-                >
-            </div>
-            <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Срок:</p>
-                <p class="borrowCalc-val day"><span class="val-number">37</span> Дней</p>
-                <input class="calc-range" type="range"
-                       min="10"
-                       max="100"
-                       step="1"
-                       value="10"
-                       data-orientation="horizontal"
+                    >
+                </div>
 
-                >
             </div>
-            <div class="borrowCalc-col">
-                <p class="borrowCalc-title">Итого к оплате до <span>27.07.17</span></p>
-                <p class="borrowCalc-val total">20 550 Руб.</p>
-                <p class="borrowCalc-title not-margin">Переплата: 5550 рублей</p>
+            <div class="borrowCalc-col bord">
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Срок:</p>
+                    <p class="borrowCalc-val day"><span class="val-number">37</span> Дней</p>
+
+                    <input class="calc-range" type="range"
+                           min="10"
+                           max="100"
+                           step="1"
+                           value="10"
+                           data-orientation="horizontal"
+
+                    >
+                </div>
+
+            </div>
+            <div class="borrowCalc-col total-col">
+                <div class="borrowCalc-wrap">
+                    <p class="borrowCalc-title">Итого к оплате до <span>27.07.17</span></p>
+                    <p class="borrowCalc-val total">20 550 Руб.</p>
+                    <p class="borrowCalc-title not-margin">Переплата: 5550 рублей</p>
+                </div>
+
 
             </div>
             <div class="borrowCalc-col">
@@ -315,9 +346,12 @@
                     </div>
                 </div>
                 <div class="footerMid-right">
-                    <img src="image/sber.png" alt="" class="partnerImage">
-                    <img src="image/balt.png" alt="" class="partnerImage">
-                    <img src="image/elex.png" alt="" class="partnerImage">
+                    <div class="partnerImage-wrap">
+                        <img src="image/sber.png" alt="" class="partnerImage">
+                        <img src="image/balt.png" alt="" class="partnerImage">
+                        <img src="image/elex.png" alt="" class="partnerImage">
+                    </div>
+
                 </div>
             </div>
             <div class="footerBottom">
@@ -336,8 +370,26 @@
                     <a href="" class="documentDownload orangeLink">Положение о защите персональных данных</a>
                     <a href="" class="documentDownload orangeLink">Раскрытие информации неограниченному кругу лиц</a>
                 </div>
+
+            </div>
+            <div class="footerBottom-comp">
+                <!--<div class="footerBottom-logo">-->
+                   <!---->
+                <!--</div>-->
+                <p class="footerBottom-text" ><img src="image/gerb.png" alt="">© ООО Микрофинансовая организация «Агентство малого кредитования».</p>
+                <p class="footerBottom-text">
+
+
+                    Агентство внесено в Государственный реестр микрофинансовых организаций: <a class="orangeLink" href="">Регистрационный номер записи 2 11 05 18 000809,</a> дата внесения сведений в государствееный реестр: 17.11.2011.
+                </p>
+            </div>
+            <div class="partnerImage-wrap mob">
+                <img src="image/sber.png" alt="" class="partnerImage">
+                <img src="image/balt.png" alt="" class="partnerImage">
+                <img src="image/elex.png" alt="" class="partnerImage">
             </div>
         </div>
+
     </footer>
 
 </body>

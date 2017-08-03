@@ -38,4 +38,24 @@ $(document).ready(function () {
     })
 
 
+
+     $('select').styler();
+
+
+    document.addEventListener('scroll', function () {
+        if(document.body.offsetWidth >= 990) {
+            if($('body').scrollTop() > $('.headerTop').height()) {
+                $('.sticky-wrap').addClass('sticky');
+
+            } else {
+                $('.sticky-wrap').removeClass('sticky');
+
+            }
+        }
+
+    })
+
+
+
+
 });
