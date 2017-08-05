@@ -396,12 +396,52 @@ header {
       top:0;
       z-index: 10000;
       background-color: #ffffff;
+      transition: padding .3s;
       .headerMid {
+        padding: 10px 15px 10px 15px;
         .headerLogo {
           img {
-            max-width: 248px;
+            transition: max-width .3s;
+            max-width: 150px;
           }
         }
+        .headerMid-phone  {
+          .phone {
+            font-size: 20px;
+            transition: all .3s;
+          }
+          .desc {
+            display: none;
+          }
+        }
+        .headerMid-address {
+          padding-top: 4px;
+          a {
+            display: inline-block;
+            margin-left: 20px;
+          }
+
+        }
+      }
+      .headerBottom {
+        li {
+          padding: 6px 0px;
+        }
+        .headerBottom-button {
+
+          margin-top: 4px;
+          a {
+            font-size: 16px;
+          }
+        }
+        nav {
+          padding-top: 1px;
+        }
+        padding: 0 18px 0 0;
+        box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.38);
+      }
+      .headerBottom-link {
+        font-size: 15px;
       }
     }
 

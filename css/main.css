@@ -314,9 +314,43 @@ header .sticky-wrap.sticky {
   width: 100%;
   top: 0;
   z-index: 10000;
-  background-color: #ffffff; }
-  header .sticky-wrap.sticky .headerMid .headerLogo img {
-    max-width: 248px; }
+  background-color: #ffffff;
+  -webkit-transition: padding .3s;
+  -o-transition: padding .3s;
+  transition: padding .3s; }
+  header .sticky-wrap.sticky .headerMid {
+    padding: 10px 15px 10px 15px; }
+    header .sticky-wrap.sticky .headerMid .headerLogo img {
+      -webkit-transition: max-width .3s;
+      -o-transition: max-width .3s;
+      transition: max-width .3s;
+      max-width: 150px; }
+    header .sticky-wrap.sticky .headerMid .headerMid-phone .phone {
+      font-size: 20px;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
+    header .sticky-wrap.sticky .headerMid .headerMid-phone .desc {
+      display: none; }
+    header .sticky-wrap.sticky .headerMid .headerMid-address {
+      padding-top: 4px; }
+      header .sticky-wrap.sticky .headerMid .headerMid-address a {
+        display: inline-block;
+        margin-left: 20px; }
+  header .sticky-wrap.sticky .headerBottom {
+    padding: 0 18px 0 0;
+    -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.38);
+            box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.38); }
+    header .sticky-wrap.sticky .headerBottom li {
+      padding: 6px 0px; }
+    header .sticky-wrap.sticky .headerBottom .headerBottom-button {
+      margin-top: 4px; }
+      header .sticky-wrap.sticky .headerBottom .headerBottom-button a {
+        font-size: 16px; }
+    header .sticky-wrap.sticky .headerBottom nav {
+      padding-top: 1px; }
+  header .sticky-wrap.sticky .headerBottom-link {
+    font-size: 15px; }
 
 .mainBanner {
   background-color: #eebd2d;
