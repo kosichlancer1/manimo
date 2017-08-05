@@ -419,6 +419,9 @@ header {
           a {
             display: inline-block;
             margin-left: 20px;
+            @media (max-width: 1060px) {
+              display: block;
+            }
           }
 
         }

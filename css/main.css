@@ -337,6 +337,9 @@ header .sticky-wrap.sticky {
       header .sticky-wrap.sticky .headerMid .headerMid-address a {
         display: inline-block;
         margin-left: 20px; }
+        @media (max-width: 1060px) {
+          header .sticky-wrap.sticky .headerMid .headerMid-address a {
+            display: block; } }
   header .sticky-wrap.sticky .headerBottom {
     padding: 0 18px 0 0;
     -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.38);
