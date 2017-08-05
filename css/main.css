@@ -137,7 +137,7 @@ header .headerMid {
           margin-left: 18px;
           display: inline-block;
           position: absolute;
-          right: -20px;
+          right: 0px;
           top: 0px; }
         header .headerMid .headerMid-inf .headerMid-cityPick .jq-selectbox .jq-selectbox__trigger {
           display: none; }
@@ -861,6 +861,10 @@ footer {
       padding-top: 17px;
       width: 11%;
       font-size: 15px; }
+      footer .footerMid .footerMid-right .partnerImage-wrap img {
+        cursor: pointer; }
+        footer .footerMid .footerMid-right .partnerImage-wrap img:hover {
+          opacity: 0.8; }
       @media (max-width: 1375px) {
         footer .footerMid .footerMid-right {
           padding-top: 0; } }
@@ -895,6 +899,11 @@ footer {
               background-size: 20px;
       padding: 5px 0px 8px 40px;
       font-size: 15px; }
+      footer .footerBottom .documentDownload:hover {
+        color: #ffffff;
+        -webkit-transition: color .3s;
+        -o-transition: color .3s;
+        transition: color .3s; }
       @media (max-width: 768px) {
         footer .footerBottom .documentDownload {
           font-size: 13px; } }
@@ -964,7 +973,10 @@ footer {
     padding: 20px 0px;
     display: none; }
     footer .partnerImage-wrap.mob img {
-      vertical-align: top; }
+      vertical-align: top;
+      cursor: pointer; }
+      footer .partnerImage-wrap.mob img:hover {
+        opacity: 0.8; }
       footer .partnerImage-wrap.mob img:not(:last-child) {
         margin-right: 11px; }
       @media (max-width: 460px) {

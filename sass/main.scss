@@ -173,7 +173,7 @@ header {
               margin-left: 18px;
               display: inline-block;
               position: absolute;
-              right: -20px;
+              right: 0px;
               top: 0px;
 
             }
@@ -1133,6 +1133,14 @@ footer {
       padding-top: 17px;
       width: 11%;
       font-size: 15px;
+      .partnerImage-wrap {
+        img {
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
       @media (max-width: 1375px) {
         padding-top: 0;
       }
@@ -1151,6 +1159,7 @@ footer {
         }
         .partnerImage-wrap {
           display: inline-block;
+
         }
       }
       @media (max-width: 768px) {
@@ -1175,6 +1184,10 @@ footer {
       background-size: 20px;
       padding: 5px 0px 8px 40px;
       font-size: 15px;
+      &:hover {
+        color: #ffffff;
+        transition: color .3s;
+      }
       @media (max-width: 768px) {
         font-size: 13px;
       }
@@ -1256,6 +1269,11 @@ footer {
     display: none;
     img {
       vertical-align: top;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+
       &:not(:last-child) {
         margin-right: 11px;
       }
