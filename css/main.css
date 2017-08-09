@@ -359,8 +359,10 @@ header .sticky-wrap.sticky {
   background-color: #eebd2d;
   letter-spacing: -5px;
   border-top: 4px solid #edd470; }
+  .mainBanner.index {
+    background-color: #f0f0ee; }
   .mainBanner .mainBanner-content {
-    padding: 45px 15px 59px 15px;
+    padding: 45px 15px 51px 15px;
     position: relative; }
   .mainBanner .mainBanner-left {
     vertical-align: top;
@@ -547,7 +549,17 @@ header .sticky-wrap.sticky {
       margin: 0 auto;
       margin-bottom: 40px;
       background-position: center center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      position: relative; }
+      .transportSection .transportSection-item .transportSection-image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%; }
       .transportSection .transportSection-item .transportSection-image.moto {
         background-image: url("../image/icon-moto.png"); }
       .transportSection .transportSection-item .transportSection-image.car {
@@ -556,10 +568,21 @@ header .sticky-wrap.sticky {
         background-image: url("../image/icon-buld.png"); }
       .transportSection .transportSection-item .transportSection-image.boat {
         background-image: url("../image/icon-boat.png"); }
+      .transportSection .transportSection-item .transportSection-image.new1 {
+        background-image: url("../image/new1.png"); }
+      .transportSection .transportSection-item .transportSection-image.new2 {
+        background-image: url("../image/new2.png"); }
+      .transportSection .transportSection-item .transportSection-image.new3 {
+        background-image: url("../image/new3.png"); }
+      .transportSection .transportSection-item .transportSection-image.new4 {
+        background-image: url("../image/new4.png"); }
   .transportSection .button {
     display: block;
     margin: 0 auto;
     margin-top: 99px; }
+  .transportSection .subTitle {
+    max-width: 300px;
+    margin: 0 auto; }
   @media (max-width: 840px) {
     .transportSection {
       margin-bottom: 0px;
@@ -575,7 +598,6 @@ header .sticky-wrap.sticky {
         margin-bottom: 33px; }
         .transportSection .transportSection-item .item-wrap {
           display: block;
-          max-width: 320px;
           margin: 0 auto;
           text-align: left; }
         .transportSection .transportSection-item .transportSection-image {
@@ -589,15 +611,49 @@ header .sticky-wrap.sticky {
           vertical-align: middle;
           margin-right: 12px; }
         .transportSection .transportSection-item .subTitle {
-          display: inline-block; }
+          display: inline-block;
+          width: -webkit-calc(100% - 116px);
+          width: calc(100% - 116px);
+          vertical-align: middle;
+          max-width: 100%; }
       .transportSection .orange-button {
         margin-top: 0; } }
   @media (max-width: 500px) {
     .transportSection .subTitle {
       font-size: 16px;
-      font-weight: bold; }
-    .transportSection .transportSection-item .item-wrap {
-      max-width: 247px; } }
+      font-weight: bold; } }
+
+.methodSection {
+  margin-bottom: 150px; }
+  .methodSection .methodSection-wrap {
+    letter-spacing: -5px; }
+    .methodSection .methodSection-wrap .methodSection-item {
+      letter-spacing: 0;
+      width: 32.3%;
+      display: inline-block;
+      text-align: center; }
+      .methodSection .methodSection-wrap .methodSection-item p {
+        background-color: #de610f;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        font-size: 35px;
+        padding: 15px 10px;
+        -webkit-border-bottom-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+        -webkit-border-bottom-right-radius: 7px;
+                border-bottom-right-radius: 7px; }
+      .methodSection .methodSection-wrap .methodSection-item:not(:last-child) {
+        margin-right: 1.5%; }
+    .methodSection .methodSection-wrap img {
+      width: 100%;
+      max-width: 468px;
+      max-height: 313px;
+      -webkit-border-top-left-radius: 7px;
+              border-top-left-radius: 7px;
+      -webkit-border-top-right-radius: 7px;
+              border-top-right-radius: 7px;
+      margin-bottom: -4px; }
 
 .documentSection {
   margin-bottom: 160px; }
