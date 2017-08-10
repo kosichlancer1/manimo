@@ -826,6 +826,13 @@ header {
 
 .methodSection {
   margin-bottom: 150px;
+  padding: 0 15px;
+  @media (max-width: 990px) {
+    margin-bottom: 90px;
+  }
+  @media (max-width: 840px) {
+    margin-top: 50px;
+  }
   .methodSection-wrap {
     letter-spacing: -5px;
     .methodSection-item {
@@ -842,11 +849,24 @@ header {
         padding: 15px 10px;
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
+        @media (max-width: 1280px) {
+          font-size: 25px;
+        }
 
       }
       &:not(:last-child) {
       margin-right: 1.5%;
-    }
+      }
+      @media (max-width: 990px) {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+        &:not(:last-child) {
+          margin-right: auto;
+          margin-bottom: 30px;
+        }
+      }
     }
     img {
       width: 100%;
@@ -1063,6 +1083,188 @@ header {
     padding-bottom: 25px;
     .sectionTitle {
       margin-bottom: 35px;
+    }
+  }
+}
+.reviewSection {
+
+  @media (max-width: 990px) {
+    .sectionTitle {
+      margin-bottom: 85px;
+    }
+  }
+  .bx-wrapper {
+    max-width: 1300px !important;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: none;
+    @media (max-width: 1430px) {
+      max-width: 1100px !important;
+    }
+    @media (max-width: 1245px) {
+      max-width: 900px !important;
+    }
+    @media (max-width: 1050px) {
+      max-width: 800px !important;
+    }
+
+
+  }
+  .bx-controls-direction {
+    a {
+      width: 57px;
+      height: 57px;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+      font-size: 0;
+      transform: rotate(-45deg);
+      top: calc(50% + 41px);
+      left: auto;
+      right: 100%;
+      &:hover  {
+        background-color: #de610f;
+        box-shadow: 1px 2px 5px 0px #b9b9b9;
+      }
+      &::before {
+        content: '';
+        width: 10px;
+        position: absolute;
+        top: 50%;
+        height: 10px;
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+        display: block;
+        font-size: 0;
+        right: 50%;
+        transform: translate(50%,-50%);
+        transition: all .3s;
+
+      }
+      &.bx-next {
+        transform: rotate(135deg);
+        left: 100%;
+        right: auto;
+      }
+
+      @media (max-width: 990px) {
+        bottom: 100% !important;
+        top: auto;
+        right: auto;
+        left:10px;
+        &.bx-next {
+          right: 10px;
+          left: auto;
+        }
+      }
+
+    }
+
+  }
+  .rewiewSection-item {
+    @media (max-width: 640px) {
+      padding: 0px 10px;
+    }
+    .reviewItem-image {
+      max-width: 164px;
+      max-height: 164px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+    .reviewItem-name {
+      color: #de610f;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 5px;
+      text-align: center;
+
+    }
+
+    .reviewItem-sub {
+      color: #333333;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      font-style: italic;
+      margin-bottom: 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .reviewItem-desc {
+      color: #000000;
+      font-weight: lighter;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+.reclamSection {
+  margin-top: 184px;
+  background-image: url(../image/skyball.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-height: 661px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .reclamSection-wrap {
+    position: relative;
+  }
+  .reclam-Title {
+    font-size: 82px;
+    color: #0f818f;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .reclam-SubTitle {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 55px;
+  }
+  .reclamSection-inf {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0,50%);
+  }
+  .skysky {
+
+    position: absolute;
+    z-index: 1;
+    top: 37%;
+  }
+  @media (max-width: 1280px) {
+    min-height: 450px;
+    margin-top: 84px;
+    .reclam-Title {
+      font-size: 60px;
+    }
+    .reclam-SubTitle {
+      margin-bottom: 26px;
+    }
+  }
+  @media (max-width: 640px) {
+    .reclamSection-inf {
+      width: 100%;
+      text-align: center;
+    }
+
+    .reclam-Title {
+      font-size: 40px;
+      margin-bottom: 20px;
     }
   }
 }

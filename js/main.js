@@ -53,7 +53,38 @@ $(document).ready(function () {
             }
         }
 
-    })
+    });
+
+
+    var slidesCount = 3,
+        slideMargin = 60,
+        slideWidth = 381;
+
+    if(window.innerWidth < 1050 && window.innerWidth > 640) {
+        slidesCount = 2;
+        slideWidth = 450;
+        console.log(2)
+    } else if (window.innerWidth < 640) {
+        slidesCount = 1;
+
+        slideWidth = 640;
+
+        console.log(1)
+    }
+
+    $('.rewiewSection-wrap').bxSlider({
+        minSlides: slidesCount,
+        maxSlides: slidesCount,
+        slideWidth: slideWidth,
+        slideMargin: slideMargin,
+        infiniteLoop: true,
+        moveSlides: 1,
+        controls: true,
+        pager: false
+
+    });
+
+
 
 
 
