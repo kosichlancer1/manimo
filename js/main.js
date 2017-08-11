@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
 
-     $('select').styler();
+    $('select').styler();
 
 
     document.addEventListener('scroll', function () {
@@ -51,9 +51,19 @@ $(document).ready(function () {
                 $('.sticky-wrap').removeClass('sticky');
 
             }
+        } else if (document.body.offsetWidth < 990) {
+            if($('body').scrollTop() > $('header').height()) {
+                $('.headerBottom').addClass('sticky');
+
+            } else {
+                $('.headerBottom').removeClass('sticky');
+
+            }
         }
 
     });
+
+
 
 
     var slidesCount = 3,
